@@ -9,20 +9,65 @@
         android:id="@+id/FirstFragment"
         android:name="com.example.buildmyeleven.FirstFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/login">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_jugadores_list"
+            app:destination="@id/jugadoresList" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
         android:name="com.example.buildmyeleven.SecondFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/singin">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/jugadoresList"
+        android:name="com.example.buildmyeleven.JugadoresList"
+        android:label="Lista de Jugadores"
+        tools:layout="@layout/fragment_jugadores_list" >
+        <action
+            android:id="@+id/action_jugadoresList_to_nuevoJugador"
+            app:destination="@id/nuevoJugador" />
+        <action
+            android:id="@+id/action_jugadoresList_to_detalleJugador"
+            app:destination="@id/DetalleJugador">
+            <argument
+                android:name="jugadorId"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nuevoJugador"
+        android:name="com.example.buildmyeleven.NuevoJugador"
+        android:label="Nuevo Jugador"
+        tools:layout="@layout/fragment_nuevo_jugador" >
+        <action
+            android:id="@+id/action_nuevoJugador_to_jugadoresList"
+            app:destination="@id/jugadoresList" />
+    </fragment>
+    <fragment
+        android:id="@+id/DetalleJugador"
+        android:name="com.example.buildmyeleven.DetalleJugador"
+        tools:layout="@layout/fragment_detalle_jugador">
+
+        <argument
+            android:name="jugadorId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_DetalleJugador_to_jugadoresList"
+            app:destination="@id/jugadoresList" />
+    </fragment>
+
+
+
+
 </navigation>
