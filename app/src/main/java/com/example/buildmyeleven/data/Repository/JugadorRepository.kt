@@ -16,6 +16,10 @@ class JugadorRepository(private val jugadorDao: JugadorDao) {
         return jugadorDao.obtenerJugadorPorId(id)
     }
 
+    suspend fun editarJugador(jugador: Jugador) {
+        jugadorDao.editarJugador(jugador)
+    }
+
     suspend fun eliminarjugadorporId(jugadorId: Int) {
         jugadorDao.eliminarJugadorPorId(jugadorId)
     }

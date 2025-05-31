@@ -20,6 +20,12 @@ class JugadorViewModel(private val repository: JugadorRepository) : ViewModel() 
         return repository.obtenerJugadorPorId(id)
     }
 
+    fun editarJugador(jugador: Jugador) {
+        viewModelScope.launch {
+            repository.editarJugador(jugador)
+        }
+    }
+
     fun deleteJugador(id: Int) {
         viewModelScope.launch(Dispatchers.IO) {
             repository.eliminarjugadorporId(id)

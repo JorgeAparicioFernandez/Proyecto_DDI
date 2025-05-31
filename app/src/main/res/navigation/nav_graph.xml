@@ -43,6 +43,9 @@
                 android:name="jugadorId"
                 app:argType="integer" />
         </action>
+        <action
+            android:id="@+id/action_jugadoresList_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
     </fragment>
 
     <fragment
@@ -65,9 +68,23 @@
         <action
             android:id="@+id/action_DetalleJugador_to_jugadoresList"
             app:destination="@id/jugadoresList" />
+        <action
+            android:id="@+id/actionDetalleJugadorToEditarJugador"
+            app:destination="@id/editarJugador" />
     </fragment>
+    <fragment
+        android:id="@+id/editarJugador"
+        android:name="com.example.buildmyeleven.EditarJugador"
+        android:label="fragment_editar_jugador"
+        tools:layout="@layout/fragment_editar_jugador" >
 
+        <argument
+            android:name="jugadorId"
+            app:argType="integer" />
 
-
+        <action
+            android:id="@+id/action_editarJugador_to_jugadoresList"
+            app:destination="@id/jugadoresList" />
+    </fragment>
 
 </navigation>

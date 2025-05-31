@@ -16,6 +16,9 @@ interface JugadorDao {
     @Query("SELECT * FROM jugadores WHERE id = :id")
     fun obtenerJugadorPorId(id: Int): LiveData<Jugador>
 
+    @Update
+    suspend fun editarJugador(jugador: Jugador)
+
     @Query("DELETE FROM jugadores WHERE id = :jugadorId")
     suspend fun eliminarJugadorPorId(jugadorId: Int)
 }

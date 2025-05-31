@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -39,8 +40,13 @@ class MainActivity : AppCompatActivity() {
                 R.id.FirstFragment -> ""
                 R.id.jugadoresList -> "Lista de Jugadores"
                 R.id.DetalleJugador -> "Detalle del jugador"
+                R.id.editarJugador ->  "Editar Jugador"
                 else -> destination.label?.toString() ?: getString(R.string.app_name)
             }
+
+            val showBackArrow = destination.id != R.id.jugadoresList
+            supportActionBar?.setDisplayHomeAsUpEnabled(showBackArrow)
+            supportActionBar?.setDisplayShowHomeEnabled(showBackArrow)
 
         }
     }
@@ -52,7 +58,16 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.action_settings -> true
+            R.id.action_logout -> {
+                // Acción al hacer clic en "Cerrar Sesión"
+                Toast.makeText(this, "Sesión cerrada", Toast.LENGTH_SHORT).show()
+
+                // Por ejemplo, navega al fragmento de login o similar
+                val navController = findNavController(R.id.nav_host_fragment_content_main)
+                navController.navigate(R.id.FirstFragment)
+
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }

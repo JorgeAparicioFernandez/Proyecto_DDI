@@ -23,8 +23,6 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ExtraText">
 
-        <!-- Aquí van todos los TextView y EditText que ya tenías -->
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

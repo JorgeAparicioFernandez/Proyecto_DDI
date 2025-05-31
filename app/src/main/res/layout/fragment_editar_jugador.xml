@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/cBase"
+    android:id="@+id/cBaset"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1B84D0"
-    android:padding="0dp"
-    tools:context=".NuevoJugador">
+    tools:context=".EditarJugador">
+
 
     <LinearLayout
         android:id="@+id/linearForm"
@@ -27,7 +25,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:text="Nombre:"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
@@ -40,7 +38,6 @@
             android:layout_marginBottom="12dp"
             android:background="@drawable/edit_text_background"
             android:hint="Nombre"
-            android:inputType="textPersonName"
             android:minHeight="48dp"
             android:paddingStart="12dp"
             android:textColor="#000000"
@@ -62,7 +59,6 @@
             android:layout_marginBottom="12dp"
             android:background="@drawable/edit_text_background"
             android:hint="Apellido"
-            android:inputType="textPersonName"
             android:minHeight="48dp"
             android:paddingStart="12dp"
             android:textColor="#000000"
@@ -84,7 +80,6 @@
             android:layout_marginBottom="12dp"
             android:background="@drawable/edit_text_background"
             android:hint="Fecha de Nacimiento (dd/mm/yyyy)"
-            android:inputType="date"
             android:minHeight="48dp"
             android:paddingStart="12dp"
             android:textColor="#000000"
@@ -106,7 +101,6 @@
             android:layout_marginBottom="12dp"
             android:background="@drawable/edit_text_background"
             android:hint="Posición"
-            android:inputType="text"
             android:minHeight="48dp"
             android:paddingStart="12dp"
             android:textColor="#000000"
@@ -127,8 +121,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:background="@drawable/edit_text_background"
-            android:minHeight="48dp"
-            android:textStyle="bold"/>
+            android:minHeight="48dp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -146,57 +139,22 @@
             android:layout_marginBottom="24dp"
             android:background="@drawable/edit_text_background"
             android:hint="Equipo Anterior"
-            android:inputType="text"
             android:minHeight="48dp"
             android:paddingStart="12dp"
             android:textColor="#000000"
             android:textSize="16sp" />
 
         <Button
-            android:id="@+id/btnGuardarJugador"
+            android:id="@+id/btnEditarJugador"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#040404"
-            android:text="Guardar"
+            android:text="Editar"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold" />
 
-</LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/menuInferior"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#FFFFFF"
-        android:padding="8dp"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
-        <Button
-            android:id="@+id/btnNuevoJugador"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#4CAF50"
-            android:text="Nuevo Jugador"
-            android:textColor="#FFFFFF"
-            android:paddingStart="24dp"
-            android:paddingEnd="24dp"
-            android:layout_marginEnd="8dp" />
-
-        <Button
-            android:id="@+id/btnListaJugadores"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#000000"
-            android:text="Lista Jugadores"
-            android:textColor="#FFFFFF"
-            android:paddingStart="24dp"
-            android:paddingEnd="24dp" />
-
     </LinearLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

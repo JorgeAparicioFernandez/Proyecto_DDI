@@ -19,6 +19,7 @@ class DetalleJugador : Fragment() {
 
     private var jugadorId: Int = -1
     private lateinit var btnEliminarJugador: Button
+    private lateinit var btnEditarJugador: Button
 
     private val jugadorViewModel: JugadorViewModel by viewModels {
         val dao = AppDatabase.getDatabase(requireContext()).jugadorDao()
@@ -43,6 +44,7 @@ class DetalleJugador : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         btnEliminarJugador = view.findViewById(R.id.btnEliminarJugadores)
+        btnEditarJugador = view.findViewById(R.id.btnEditarJugador)
 
         val etNombre = view.findViewById<EditText>(R.id.etNombre)
         val etApellido = view.findViewById<EditText>(R.id.etApellido)
@@ -54,13 +56,6 @@ class DetalleJugador : Fragment() {
         // Obtener el ID del jugador pasado por Safe Args
         val jugadorId = DetalleJugadorArgs.fromBundle(requireArguments()).jugadorId
 
-        // ViewModel (asegúrate de tenerlo definido arriba)
-        val jugadorViewModel: JugadorViewModel by viewModels {
-            val dao = AppDatabase.getDatabase(requireContext()).jugadorDao()
-            val repo = JugadorRepository(dao)
-            JugadorViewModelFactory(repo)
-        }
-
         // Observar y llenar los campos
         jugadorViewModel.obtenerJugadorPorId(jugadorId).observe(viewLifecycleOwner) { jugador ->
             if (jugador != null) {
@@ -70,7 +65,13 @@ class DetalleJugador : Fragment() {
                 etPosicion.setText(jugador.posicion)
                 etPieHabil.setText(jugador.pieHabil)
                 etEquipoAnterior.setText(jugador.equipoAnterior)
-            }
+
+                btnEditarJugador.setOnClickListener {
+
+                    val action = DetalleJugadorDirections.actionDetalleJugadorToEditarJugador(jugador.id)
+                    findNavController().navigate(action)
+
+                }
 
             btnEliminarJugador.setOnClickListener {
                 val jugadorId = jugador.id
@@ -84,4 +85,5 @@ class DetalleJugador : Fragment() {
         }
 
     }
+}
 }
