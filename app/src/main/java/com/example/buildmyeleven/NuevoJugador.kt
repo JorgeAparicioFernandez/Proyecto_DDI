@@ -95,12 +95,10 @@ class NuevoJugador : Fragment() {
 
         var age = today.get(java.util.Calendar.YEAR) - birthDate.get(java.util.Calendar.YEAR)
 
-    // Ajustar si aún no ha cumplido años este año
         if (today.get(java.util.Calendar.DAY_OF_YEAR) < birthDate.get(java.util.Calendar.DAY_OF_YEAR)) {
             age--
         }
 
-    // Asignar categoría según la edad
         val categoria = when (age) {
             in 5..7 -> "Prebenjamín"
             in 8..9 -> "Benjamín"
@@ -108,11 +106,9 @@ class NuevoJugador : Fragment() {
             in 12..13 -> "Infantil"
             in 14..15 -> "Cadete"
             in 16..18 -> "Juvenil"
-            else -> "Senior" // Para 19 años o más, o menor de 5 años (podrías añadir otro caso si quieres)
+            else -> "Senior"
         }
 
-
-        // Aquí crea el objeto jugador (ajusta según tu modelo)
         val jugador = Jugador(
             nombre = nombre,
             apellido = apellido,

@@ -13,7 +13,7 @@ data class Jugador(
     val apellido: String,
     val fechaNacimiento: String,
     val posicion: String,
-    val pieHabil: String,       // Diestro / Zurdo / Ambidiestro
+    val pieHabil: String,
     val equipoAnterior: String,
-    val categoria: String       // Se saca a partir de la Fecha de Nacimiento
+    val categoria: String
 ) : Parcelable

@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Nombre:"
+            android:text="@string/TVNombre"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -41,21 +41,20 @@
             android:clickable="false"
             android:cursorVisible="false"
             android:focusable="false"
-            android:hint="Nombre"
+            android:hint="@string/HintNombre"
             android:inputType="none"
             android:minHeight="48dp"
             android:paddingStart="12dp"
             android:textColor="#000000"
             android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <!-- ... repite el resto de campos aquí igual que antes ... -->
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Apellido:"
+            android:text="@string/TVApellido"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -69,19 +68,20 @@
             android:clickable="false"
             android:cursorVisible="false"
             android:focusable="false"
-            android:hint="Apellido"
+            android:hint="@string/HintApellido"
             android:inputType="none"
             android:minHeight="48dp"
             android:paddingStart="12dp"
             android:textColor="#000000"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Fecha de Nacimiento:"
+            android:text="@string/TVFechaDeNacimiento"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -95,19 +95,20 @@
             android:clickable="false"
             android:cursorVisible="false"
             android:focusable="false"
-            android:hint="Fecha de Nacimiento (dd/mm/yyyy)"
+            android:hint="@string/HintFechaDeNacimiento"
             android:inputType="none"
             android:minHeight="48dp"
             android:paddingStart="12dp"
             android:textColor="#000000"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Posición:"
+            android:text="@string/TVPosicion"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -121,19 +122,20 @@
             android:clickable="false"
             android:cursorVisible="false"
             android:focusable="false"
-            android:hint="Posición"
+            android:hint="@string/HintPosicion"
             android:inputType="none"
             android:minHeight="48dp"
             android:paddingStart="12dp"
             android:textColor="#000000"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Pie Hábil:"
+            android:text="@string/TVPieHabil"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -147,7 +149,7 @@
             android:clickable="false"
             android:cursorVisible="false"
             android:focusable="false"
-            android:hint="Pie Habíl"
+            android:hint="@string/HintPieHabil"
             android:inputType="none"
             android:minHeight="48dp"
             android:paddingStart="12dp"
@@ -159,7 +161,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Equipo Anterior:"
+            android:text="@string/TVEquipoAnterior"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -173,13 +175,14 @@
             android:clickable="false"
             android:cursorVisible="false"
             android:focusable="false"
-            android:hint="Equipo Anterior"
+            android:hint="@string/HintEquipoAnterior"
             android:inputType="none"
             android:minHeight="48dp"
             android:paddingStart="12dp"
             android:textColor="#000000"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
 
     </LinearLayout>
 
@@ -200,7 +203,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#000000"
-            android:text="Editar Jugador"
+            android:text="@string/BEditarJugador"
             android:textColor="#FFFFFF"
             android:paddingStart="24dp"
             android:paddingEnd="24dp"
@@ -213,7 +216,7 @@
             android:backgroundTint="#BF0D0D"
             android:paddingStart="24dp"
             android:paddingEnd="24dp"
-            android:text="Eliminar Jugador"
+            android:text="@string/BEliminarJugador"
             android:textColor="#FFFFFF" />
 
     </LinearLayout>

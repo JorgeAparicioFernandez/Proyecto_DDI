@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.buildmyeleven.data.model.Jugador
 
 class JugadorAdapter(
-    private val onItemClick: (Int) -> Unit  // Cambiamos `param: (Any) -> Unit` a esto
+    private val onItemClick: (Int) -> Unit
 ) : RecyclerView.Adapter<JugadorAdapter.JugadorViewHolder>() {
 
     private var jugadores: List<Jugador> = emptyList()
@@ -20,7 +20,7 @@ class JugadorAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): JugadorViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_jugador, parent, false)
-        return JugadorViewHolder(view, onItemClick) // ✅ Pasamos el click al ViewHolder
+        return JugadorViewHolder(view, onItemClick)
     }
 
     override fun onBindViewHolder(holder: JugadorViewHolder, position: Int) {
@@ -31,7 +31,7 @@ class JugadorAdapter(
 
     class JugadorViewHolder(
         itemView: View,
-        private val onItemClick: (Int) -> Unit  // ✅ Recibimos el click como parámetro
+        private val onItemClick: (Int) -> Unit
     ) : RecyclerView.ViewHolder(itemView) {
 
         private var jugadorId: Int = 0
@@ -40,7 +40,7 @@ class JugadorAdapter(
 
         init {
             itemView.setOnClickListener {
-                onItemClick(jugadorId) // ✅ Aquí sí se puede usar
+                onItemClick(jugadorId)
             }
         }
 

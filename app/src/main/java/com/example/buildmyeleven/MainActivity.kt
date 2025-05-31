@@ -59,10 +59,8 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.action_logout -> {
-                // Acción al hacer clic en "Cerrar Sesión"
                 Toast.makeText(this, "Sesión cerrada", Toast.LENGTH_SHORT).show()
 
-                // Por ejemplo, navega al fragmento de login o similar
                 val navController = findNavController(R.id.nav_host_fragment_content_main)
                 navController.navigate(R.id.FirstFragment)
 

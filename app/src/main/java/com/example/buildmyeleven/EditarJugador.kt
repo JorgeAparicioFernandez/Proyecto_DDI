@@ -42,10 +42,8 @@ class EditarJugador : Fragment() {
 
         val spinnerPieHabil = view.findViewById<Spinner>(R.id.spinnerPieHabil)
 
-    // Opciones del Spinner (ejemplo)
         val opcionesPie = listOf("Izquierdo", "Derecho", "Ambidiestro")
 
-    // Crea el adapter y asigna al spinner
         val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, opcionesPie)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinnerPieHabil.adapter = adapter
@@ -53,7 +51,6 @@ class EditarJugador : Fragment() {
         jugadorId = arguments?.getInt("jugadorId") ?: -1
         if (jugadorId == -1) {
             Toast.makeText(requireContext(), "Error: jugadorId no recibido", Toast.LENGTH_SHORT).show()
-            // Evitar seguir porque no hay jugadorId válido
             return
         } else {
             println("DEBUG: jugadorId recibido = $jugadorId")
@@ -64,7 +61,6 @@ class EditarJugador : Fragment() {
             if (jugadorEncontrado != null) {
                 jugador = jugadorEncontrado
 
-                // Llena los EditTexts con la info del jugador
                 view.findViewById<EditText>(R.id.etNombre).setText(jugador.nombre)
                 view.findViewById<EditText>(R.id.etApellido).setText(jugador.apellido)
                 view.findViewById<EditText>(R.id.etFechaNacimiento).setText(jugador.fechaNacimiento)

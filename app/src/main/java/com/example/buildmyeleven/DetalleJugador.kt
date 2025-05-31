@@ -29,7 +29,6 @@ class DetalleJugador : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // Recuperar argumento con Safe Args
         jugadorId = DetalleJugadorArgs.fromBundle(requireArguments()).jugadorId
     }
 
@@ -53,10 +52,8 @@ class DetalleJugador : Fragment() {
         val etPieHabil = view.findViewById<EditText>(R.id.etPieHabil)
         val etEquipoAnterior = view.findViewById<EditText>(R.id.etEquipoAnterior)
 
-        // Obtener el ID del jugador pasado por Safe Args
         val jugadorId = DetalleJugadorArgs.fromBundle(requireArguments()).jugadorId
 
-        // Observar y llenar los campos
         jugadorViewModel.obtenerJugadorPorId(jugadorId).observe(viewLifecycleOwner) { jugador ->
             if (jugador != null) {
                 etNombre.setText(jugador.nombre)

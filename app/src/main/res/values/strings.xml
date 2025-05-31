@@ -14,4 +14,31 @@
     </string-array>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="TVApellido">Apellido:</string>
+    <string name="HintApellido">Apellido</string>
+    <string name="TVFechaDeNacimiento">Fecha de Nacimiento:</string>
+    <string name="HintFechaDeNacimiento">Fecha de Nacimiento (dd/mm/yyyy)</string>
+    <string name="TVPosicion">Posición:</string>
+    <string name="HintPosicion">Posición</string>
+    <string name="TVPieHabil">Pie Hábil:</string>
+    <string name="HintPieHabil">Pie Habíl</string>
+    <string name="TVEquipoAnterior">Equipo Anterior:</string>
+    <string name="HintEquipoAnterior">Equipo Anterior</string>
+    <string name="BEditarJugador">Editar Jugador</string>
+    <string name="BEliminarJugador">Eliminar Jugador</string>
+    <string name="TVNombre">Nombre:</string>
+    <string name="HintNombre">Nombre</string>
+    <string name="DListaDeJugadores">Lista de jugadores</string>
+    <string name="BNuevoJugador">Nuevo Jugador</string>
+    <string name="BListaJugadores">Lista Jugadores</string>
+    <string name="BGuardar">Guardar</string>
+    <string name="TVCategoria">Categoría</string>
+    <string name="TVBuildMyEleven">BuildMyEleven</string>
+    <string name="HintUsuario">Usuario</string>
+    <string name="HintContrasena">Contraseña</string>
+    <string name="BIniciarSesion">Iniciar Sesión</string>
+    <string name="BRegistrarse">Registrarse</string>
+    <string name="HintCorreoElectronico">Correo electrónico</string>
+    <string name="HintRepetirContrasena">Repetir Contraseña</string>
+    <string name="ICerrarSesion">Cerrar Sesión</string>
 </resources>

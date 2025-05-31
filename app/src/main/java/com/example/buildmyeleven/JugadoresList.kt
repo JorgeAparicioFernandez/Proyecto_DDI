@@ -25,7 +25,6 @@ class JugadoresList : Fragment() {
     private lateinit var btnListaJugadores: Button
     private lateinit var adapter: JugadorAdapter
 
-    // Crear ViewModel con factory para pasar repositorio
     private val jugadorViewModel: JugadorViewModel by viewModels {
         val dao: JugadorDao = AppDatabase.getDatabase(requireContext()).jugadorDao()
         val repo = JugadorRepository(dao)
@@ -54,7 +53,6 @@ class JugadoresList : Fragment() {
         rvJugadores.layoutManager = LinearLayoutManager(requireContext())
         rvJugadores.adapter = adapter
 
-        // Observar lista de jugadores desde ViewModel y actualizar adapter
         jugadorViewModel.todosLosJugadores.observe(viewLifecycleOwner, Observer { jugadores ->
             adapter.setJugadores(jugadores)
         })

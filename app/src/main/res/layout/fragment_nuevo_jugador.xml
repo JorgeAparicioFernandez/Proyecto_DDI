@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Nombre:"
+            android:text="@string/TVNombre"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -39,18 +39,19 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:background="@drawable/edit_text_background"
-            android:hint="Nombre"
+            android:hint="@string/HintNombre"
             android:inputType="textPersonName"
             android:minHeight="48dp"
             android:paddingStart="12dp"
             android:textColor="#000000"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Apellido:"
+            android:text="@string/TVApellido"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -61,18 +62,19 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:background="@drawable/edit_text_background"
-            android:hint="Apellido"
+            android:hint="@string/HintApellido"
             android:inputType="textPersonName"
             android:minHeight="48dp"
             android:paddingStart="12dp"
             android:textColor="#000000"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Fecha de Nacimiento:"
+            android:text="@string/TVFechaDeNacimiento"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -83,18 +85,19 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:background="@drawable/edit_text_background"
-            android:hint="Fecha de Nacimiento (dd/mm/yyyy)"
+            android:hint="@string/HintFechaDeNacimiento"
             android:inputType="date"
             android:minHeight="48dp"
             android:paddingStart="12dp"
             android:textColor="#000000"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Posición:"
+            android:text="@string/TVPosicion"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -105,18 +108,19 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:background="@drawable/edit_text_background"
-            android:hint="Posición"
+            android:hint="@string/HintPosicion"
             android:inputType="text"
             android:minHeight="48dp"
             android:paddingStart="12dp"
             android:textColor="#000000"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Pie Hábil:"
+            android:text="@string/TVPieHabil"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -134,7 +138,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Equipo Anterior:"
+            android:text="@string/TVEquipoAnterior"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -145,19 +149,20 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:background="@drawable/edit_text_background"
-            android:hint="Equipo Anterior"
+            android:hint="@string/HintEquipoAnterior"
             android:inputType="text"
             android:minHeight="48dp"
             android:paddingStart="12dp"
             android:textColor="#000000"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="RtlSymmetry" />
 
         <Button
             android:id="@+id/btnGuardarJugador"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#040404"
-            android:text="Guardar"
+            android:text="@string/BGuardar"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -181,7 +186,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#4CAF50"
-            android:text="Nuevo Jugador"
+            android:text="@string/BNuevoJugador"
             android:textColor="#FFFFFF"
             android:paddingStart="24dp"
             android:paddingEnd="24dp"
@@ -192,7 +197,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#000000"
-            android:text="Lista Jugadores"
+            android:text="@string/BListaJugadores"
             android:textColor="#FFFFFF"
             android:paddingStart="24dp"
             android:paddingEnd="24dp" />

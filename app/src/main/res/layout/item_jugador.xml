@@ -17,7 +17,7 @@
             android:id="@+id/tvNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre"
+            android:text="@string/TVNombre"
             android:textStyle="bold"
             android:textSize="18sp" />
 
@@ -25,7 +25,7 @@
             android:id="@+id/tvCategoria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Categoría"
+            android:text="@string/TVCategoria"
             android:textSize="14sp" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

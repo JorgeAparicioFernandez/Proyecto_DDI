@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="BuildMyEleven"
+            android:text="@string/TVBuildMyEleven"
             android:textAlignment="center"
             android:textColor="#FBFBFB"
             android:textSize="34sp"
@@ -37,13 +37,13 @@
             android:layout_marginTop="8dp"
             android:background="@drawable/edit_text_background"
             android:ems="10"
-            android:hint="Usuario"
+            android:hint="@string/HintUsuario"
             android:inputType="text"
             android:textSize="14sp"
             android:textStyle="bold"
             android:paddingStart="12dp"
             android:textColor="#000000"
-            />
+            tools:ignore="RtlSymmetry" />
 
         <EditText
             android:id="@+id/edPassword"
@@ -52,13 +52,13 @@
             android:layout_marginTop="8dp"
             android:background="@drawable/edit_text_background"
             android:ems="10"
-            android:hint="Contraseña"
+            android:hint="@string/HintContrasena"
             android:inputType="textPassword"
             android:textSize="14sp"
             android:textStyle="bold"
             android:paddingStart="12dp"
             android:textColor="#000000"
-            />
+            tools:ignore="RtlSymmetry" />
 
         <Button
             android:id="@+id/bLogIn"
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:backgroundTint="#040404"
-            android:text="Iniciar Sesión"
+            android:text="@string/BIniciarSesion"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -75,8 +75,8 @@
             android:id="@+id/bSingIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#10BC08"
-            android:text="Registrarse"
+            android:backgroundTint="#4CAF50"
+            android:text="@string/BRegistrarse"
             android:textColor="#FFFFFF" />
     </LinearLayout>
 

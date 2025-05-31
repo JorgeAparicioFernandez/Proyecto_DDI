@@ -24,12 +24,13 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:background="@drawable/edit_text_background"
-            android:hint="Usuario"
+            android:hint="@string/HintUsuario"
             android:inputType="text"
             android:paddingStart="12dp"
             android:textColor="#000000"
             android:textSize="14sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
 
         <EditText
             android:id="@+id/etCorreo"
@@ -37,12 +38,13 @@
             android:layout_height="55dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/edit_text_background"
-            android:hint="Correo electrónico"
+            android:hint="@string/HintCorreoElectronico"
             android:inputType="textEmailAddress"
             android:paddingStart="12dp"
             android:textColor="#000000"
             android:textSize="14sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
 
         <EditText
             android:id="@+id/edPassword"
@@ -50,12 +52,13 @@
             android:layout_height="55dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/edit_text_background"
-            android:hint="Contraseña"
+            android:hint="@string/HintContrasena"
             android:inputType="textPassword"
             android:paddingStart="12dp"
             android:textColor="#000000"
             android:textSize="14sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
 
         <EditText
             android:id="@+id/etRepetirPassword"
@@ -63,12 +66,13 @@
             android:layout_height="55dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/edit_text_background"
-            android:hint="Repetir Contraseña"
+            android:hint="@string/HintRepetirContrasena"
             android:inputType="textPassword"
             android:paddingStart="12dp"
             android:textColor="#000000"
             android:textSize="14sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
 
         <Button
             android:id="@+id/bRegistrarse"
@@ -76,7 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:backgroundTint="#040404"
-            android:text="Registrarse"
+            android:text="@string/BRegistrarse"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold" />
